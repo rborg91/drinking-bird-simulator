@@ -1,6 +1,7 @@
 import argparse
 import animations
 import os
+import random
 import time
 
 from pynput.keyboard import Controller
@@ -22,12 +23,19 @@ keyboard = Controller()
 rounds = args.rounds
 key_input = args.key
 
+quotes = [
+    "I think I'll order a TAB",
+    "Where's the 'any' key?",
+    "All I see is esc, ctrl and pig up"
+]
+
 os.system("cls")
 print("""Change to your desired window - 10 seconds to start
 Keep this terminal in view to see the drinking bird in action""")
 time.sleep(10)
-print("GO!")
-time.sleep(1)
+print("")
+print(random.choice(quotes))
+time.sleep(2)
 
 counter=0
 while counter<rounds:
