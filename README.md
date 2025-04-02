@@ -7,12 +7,12 @@ your work tasks.
 
 ## Requirements
 
-- Python 3.12+
+- Python 3.10+
 - [Python Poetry](https://python-poetry.org/docs/)
 
 **Note:** Can only run in Powershell.
 
-## Usage
+## Installation
 
 Clone this repository to your local machine and change into the directory.
 
@@ -22,7 +22,9 @@ in your Powershell terminal:
 
     poetry install
 
-To run the drinking bird simulator, run the following command
+## Usage
+
+To run the drinking bird simulator, run the following command:
 
     poetry run python drinkingbird.py
 
